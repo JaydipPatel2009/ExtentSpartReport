@@ -3,27 +3,14 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2021-09-24T20:26:08.341Z",
+        "start_timestamp": "2021-09-26T22:52:40.127Z",
         "line": 6,
         "name": "Selenium Integration Test 1",
         "description": "",
         "id": "default;selenium-integration-test-1",
         "type": "scenario",
         "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 642546000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "User launches the Google",
-            "match": {
-              "location": "stepDefinitions.StepDef_LoginPage.testStep()"
-            },
-            "keyword": "Given "
-          }
-        ],
+        "steps": [],
         "tags": [
           {
             "name": "@CRMENG-8393"
@@ -34,27 +21,14 @@
         ]
       },
       {
-        "start_timestamp": "2021-09-24T20:26:09.032Z",
+        "start_timestamp": "2021-09-26T22:52:40.133Z",
         "line": 11,
         "name": "Selenium Integration Test 2",
         "description": "",
         "id": "default;selenium-integration-test-2",
         "type": "scenario",
         "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 687438000,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "User launches the FaceBook",
-            "match": {
-              "location": "stepDefinitions.StepDef_LoginPage.testStep2()"
-            },
-            "keyword": "Given "
-          }
-        ],
+        "steps": [],
         "tags": [
           {
             "name": "@CRMENG-8393"
@@ -80,5 +54,54 @@
         }
       }
     ]
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-09-26T22:52:40.136Z",
+        "line": 2,
+        "name": "Could not execute Cucumber",
+        "description": "",
+        "id": "failure;could-not-execute-cucumber",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 0,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "Cucumber could not execute",
+            "match": {
+              "arguments": [],
+              "location": "io.cucumber.core.Failure.cucumber_could_not_execute()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 0,
+              "error_message": "There were 2 exceptions:\n  java.lang.NoSuchMethodError(\u0027io.cucumber.messages.types.Envelope io.cucumber.gherkin.Gherkin.makeSourceEnvelope(java.lang.String, java.lang.String)\u0027)\n  java.lang.NoSuchMethodError(\u0027io.cucumber.messages.types.Envelope io.cucumber.gherkin.Gherkin.makeSourceEnvelope(java.lang.String, java.lang.String)\u0027)",
+              "status": "failed"
+            },
+            "line": 4,
+            "name": "Cucumber will report this error:",
+            "match": {
+              "arguments": [],
+              "location": "io.cucumber.core.Failure.cucumber_reports_this_error()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Test run failed",
+    "description": "There were errors during the execution",
+    "id": "failure",
+    "keyword": "Feature",
+    "uri": "classpath:io/cucumber/core/failure.feature",
+    "tags": []
   }
 ]
