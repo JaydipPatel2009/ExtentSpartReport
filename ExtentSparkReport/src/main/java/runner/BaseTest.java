@@ -16,9 +16,7 @@ public class BaseTest {
 	@BeforeTest
 	public static void setUp() throws IOException {
 //		System.out.println(System.getProperty("user.dir"));
-// 		System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/chromedriver");
-		
-		System.setProperty("webdriver.chrome.driver",System.getProperty("/usr/local/bin/chromedriver"));
+		System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/chromedriver");
 		driver = new ChromeDriver();
 		System.out.println("Driver successfully started...");
 //		String reportPath = System.getProperty("user.dir")+"/target/test-output/Spark/Spark.html";
